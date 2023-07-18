@@ -1,18 +1,19 @@
 const express = require('express');
 const { MongoClient } = require('mongodb');
-
+const Dotenv = require('dotenv')
 const app = express();
 
+Dotenv.config();
 // Connection URL for MongoDB
-MongoClient.connect("mongodb+srv://ShahLead:3e6e6u0V64qmbzyK@cluster0.4vb8zor.mongodb.net/test?retryWrites=true&w=majority", () => console.log("Connected to MongoDB"))
+MongoClient.connect(process.env.MANGO_DB, () => console.log("Connected to MongoDB"))
 
 
 // Import Routers
 const authRoute = require('./routes/auth');
 
-// Route Middlewares
+// Route Middle
 app.use('/api/user', authRoute);
 
 app.listen(3000, () => {
-  console.log("Server Up and running on port 3000");
+  console.log("Server Up and running!");
 });
