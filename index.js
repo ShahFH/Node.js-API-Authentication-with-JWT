@@ -11,6 +11,8 @@ MongoClient.connect(process.env.MANGO_DB, () => console.log("Connected to MongoD
 // Import Routers
 const authRoute = require('./routes/auth');
 
+
+app.use(express.json());
 // Route Middle
 app.use('/api/user', authRoute);
 
