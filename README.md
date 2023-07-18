@@ -13,8 +13,10 @@ This repository contains a Node.js API that provides authentication functionalit
 1. Clone the repository to your local machine using <code>git clone</code> URL
 2. Install the required dependencies: <code> npm install </code>
 3. Set up the MongoDB connection:
-  <code>Make sure you have MongoDB installed and running.
-Edit the config.js file to specify your MongoDB connection URL.</code>
+```
+Make sure you have MongoDB installed and running.
+Edit the config.js file to specify your MongoDB connection URL.
+```
 
 ## Usage
 To start the server, use the following command:
