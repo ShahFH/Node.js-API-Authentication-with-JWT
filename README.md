@@ -21,14 +21,14 @@ Edit the config.js file to specify your MongoDB connection URL.
 ## Usage
 To start the server, use the following command:
 <code> npm start </code>
-<br>The server will be running at http://localhost:3000 by default. You can change the port by modifying the PORT constant in the app.js file.
+<br>The server will be running at http://localhost:3000 by default. You can change the port by modifying the PORT constant in the index.js file.
 
 ## Endpoints
 The following API endpoints are available:
 ```"copy"
-<br> POST /api/auth/login: Allows users to log in and obtain a JWT token.
-<br>POST /api/auth/register: Allows users to create a new account.
-<br>GET /api/private: A protected route that requires a valid JWT token for access.
+<br> POST /api/auth/login
+<br>POST /api/auth/register
+<br>GET /api/private
 ```
 
 Feel free to use, modify, and distribute this code as per the terms of the MIT License. However, please note that this project comes with no warranties. Use it at your own risk.
