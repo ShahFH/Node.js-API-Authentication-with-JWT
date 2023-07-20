@@ -26,9 +26,9 @@ To start the server, use the following command:
 ## Endpoints
 The following API endpoints are available:
 ```"copy"
-<br> POST /api/auth/login
-<br>POST /api/auth/register
-<br>GET /api/private
+POST /api/user/login
+POST /api/user/register
+
 ```
 
 Feel free to use, modify, and distribute this code as per the terms of the MIT License. However, please note that this project comes with no warranties. Use it at your own risk.
