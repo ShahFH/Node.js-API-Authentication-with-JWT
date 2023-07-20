@@ -1,6 +1,6 @@
-const { MongoClient } = require('mongodb');
+const mongoose = require('mongoose')
 
-const userSchema = new MongoClient.Schema({
+const userSchema = new mongoose.Schema({
     name: {
         type: String,
         required: true,
@@ -25,4 +25,4 @@ const userSchema = new MongoClient.Schema({
     }
 })
 
-module.exports = MongoClient.model('User', userSchema)
+module.exports = mongoose.model('User', userSchema)
