@@ -1,7 +1,7 @@
 # Node.js Authentication API
 This repository contains a Node.js API that provides authentication functionality for use in various applications. The API utilizes JWT (JSON Web Tokens) for authentication and MongoDB as its database. It also incorporates Mongoose to create models and connect to the Express server, bcryptjs for password hashing, and jwt to secure private routes.
 
-## Technologies Used
+## Technologies Used ⚙ 
 - Node.js
 - Express.js
 - MongoDB
@@ -9,7 +9,7 @@ This repository contains a Node.js API that provides authentication functionalit
 - bcryptjs
 - JSON Web Tokens (JWT)
 
-## Installation
+## Installation ⚒ 
 1. Clone the repository to your local machine using <code>git clone</code> URL
 2. Install the required dependencies: <code> npm install </code>
 3. Set up the MongoDB connection:
